@@ -1,0 +1,19 @@
+version: 1.0.0
+title: Waktu Penyelesaian Izin Usaha per Provinsi
+description: Meneliti waktu penyelesaian izin usaha atau NIB per provinsi di Indonesia beserta sumbernya.
+instructions: |
+  Baca dan ikuti agents/waktu-penyelesaian-izin-provinsi/instruction.md. Gunakan
+  alat pencarian web yang tersedia untuk memeriksa sumber secara langsung. Simpan
+  setiap rata-rata aktual yang terverifikasi langsung ke tabel database yang ditentukan
+  dalam instruksi menggunakan tools/database.py. Jangan membuat file hasil JSON.
+  Jangan mengarang data atau sumber; lewati provinsi tanpa data terverifikasi.
+prompt: |
+  Cari data waktu penyelesaian izin usaha atau penerbitan NIB terbaru yang tersedia
+  untuk setiap provinsi di Indonesia, lalu masukkan setiap temuan rata-rata aktual
+  terverifikasi ke database sesuai instruksi.
+extensions:
+  - type: builtin
+    name: developer
+    display_name: Developer
+    timeout: 300
+    bundled: true

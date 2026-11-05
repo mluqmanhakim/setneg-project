@@ -1,0 +1,19 @@
+version: 1.0.0
+title: Izin Usaha yang Sedang Diproses OSS
+description: Meneliti jumlah permohonan izin usaha yang masih diproses melalui OSS beserta sumber dan tanggal datanya.
+instructions: |
+  Baca dan ikuti agents/izin-usaha-diproses-oss/instruction.md. Gunakan alat
+  pencarian web yang tersedia untuk memeriksa sumber secara langsung. Simpan
+  jumlah terverifikasi langsung ke tabel database yang ditentukan dalam instruksi
+  menggunakan tools/database.py. Jangan membuat file hasil JSON.
+  Jangan mengarang data atau sumber.
+prompt: |
+  Cari jumlah terbaru permohonan izin usaha yang masih aktif diproses melalui
+  OSS di Indonesia, lalu masukkan jumlah dan sumber terverifikasi ke database
+  sesuai instruksi.
+extensions:
+  - type: builtin
+    name: developer
+    display_name: Developer
+    timeout: 300
+    bundled: true

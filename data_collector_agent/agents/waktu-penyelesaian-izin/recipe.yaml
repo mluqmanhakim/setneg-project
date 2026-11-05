@@ -1,0 +1,19 @@
+version: 1.0.0
+title: Waktu Penyelesaian Izin Usaha
+description: Meneliti rata-rata waktu penyelesaian izin usaha atau NIB di Indonesia beserta sumbernya.
+instructions: |
+  Baca dan ikuti agents/waktu-penyelesaian-izin/instruction.md. Gunakan alat
+  pencarian web yang tersedia untuk memeriksa sumber secara langsung. Simpan
+  rata-rata terverifikasi langsung ke tabel database yang ditentukan dalam instruksi
+  menggunakan tools/database.py. Jangan membuat file hasil JSON.
+  Jangan mengarang data atau sumber.
+prompt: |
+  Cari rata-rata waktu aktual penyelesaian izin usaha atau penerbitan NIB di
+  Indonesia yang terbaru tersedia, lalu masukkan rata-rata dan sumber terverifikasi
+  ke database sesuai instruksi.
+extensions:
+  - type: builtin
+    name: developer
+    display_name: Developer
+    timeout: 300
+    bundled: true
